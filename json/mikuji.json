@@ -1,0 +1,26 @@
+[
+    {
+        "luck": "大吉",
+        "weight": 1
+    },
+    {
+        "luck": "吉",
+        "weight": 5
+    },
+    {
+        "luck": "中吉",
+        "weight": 10
+    },
+    {
+        "luck": "小吉",
+        "weight": 10
+    },
+    {
+        "luck": "凶",
+        "weight": 5
+    },
+    {
+        "luck": "大凶",
+        "weight": 1
+    }
+]
