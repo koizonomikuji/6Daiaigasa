@@ -5,28 +5,30 @@ function mikuji() {
         //console.log(data);
 
         // 乱数を生成
-        var random = random_weight(data);
+        let random = random_weight(data);
         //console.log(random);
 
         // おみくじの結果を表示
-        var result = data[random];
+        let result = data[random];
         //console.log(result);
 
         let resultText = document.getElementById("luck");
         resultText.textContent = result.luck;
+        test_random_weight(data);
     });
 }
 
 // 重み付き乱数
 function random_weight(data) {
-    var random = Math.random();
-    var sum = 0;
-    for (var i = 0; i < data.length; i++) {
+    let random = Math.random();
+    let sum = 0;
+    for (let i = 0; i < data.length; i++) {
         sum += data[i].weight;
     }
-    var tmp = 0;
-    for (var i = 0; i < data.length; i++) {
-        tmp += data[i].weight / sum;
+    let tmp = 0;
+    random *= sum;
+    for (let i = 0; i < data.length; i++) {
+        tmp += data[i].weight;
         if (random < tmp) {
             random = i;
             break;
@@ -40,8 +42,8 @@ function random_weight(data) {
 function test_random_weight(data) {
     result_dict = {};
     const N = 100;
-    var id;
-    for (var i = 0; i < N; i++) {
+    let id;
+    for (let i = 0; i < N; i++) {
         id = random_weight(data);
         if (id in result_dict) {
             result_dict[id] += 1;
@@ -50,8 +52,8 @@ function test_random_weight(data) {
             result_dict[id] = 1;
         }
     }
-    var sum = 0;
-    for (var i = 0; i < data.length; i++) {
+    let sum = 0;
+    for (let i = 0; i < data.length; i++) {
         sum += data[i].weight;
     }
     Object.keys(result_dict).forEach(element => {

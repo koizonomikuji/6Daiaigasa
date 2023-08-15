@@ -1,19 +1,19 @@
 [
     {
         "luck": "大吉",
-        "weight": 1
+        "weight": 30
     },
     {
         "luck": "吉",
-        "weight": 5
+        "weight": 50
     },
     {
         "luck": "中吉",
-        "weight": 10
+        "weight": 50
     },
     {
         "luck": "小吉",
-        "weight": 10
+        "weight": 50
     },
     {
         "luck": "凶",
