@@ -159,6 +159,27 @@ header {
     /*メニューを画面内へ*/
 }
 
+/*上部の画像*/
+#head-img {
+    display: flex;
+    height: 60vw;
+}
+
+#mikuji-banner {
+    width: 100vw;
+    height: 50vw;
+}
+
+#mikuji-banner img {
+    width: 100%;
+}
+
+/*scroll-text*/
+#scroll-text {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
 /*information*/
 #information {
     background-color: #ffffff;
@@ -191,6 +212,39 @@ header {
     border: none;
     height: 8px;
     background-color: #ffffff;
+}
+
+/*あらすじ*/
+#arasuji {
+    background-color: #fff6ec;
+    padding: 5px 20px 20px 20px;
+    border-top: #6688bb solid 2px;
+    border-bottom: #6688bb solid 2px;
+    margin-top: 50px;
+}
+
+#arasuji h1 {
+    text-align: center;
+}
+
+.pink {
+    color: #ff99aa;
+}
+
+.blue {
+    color: #218ed6;
+}
+
+.orange {
+    color: #ffaa00;
+}
+
+.yellow {
+    color: #ffcc00;
+}
+
+.lightblue {
+    color: #00ccff;
 }
 
 /*以下、ポップアップ用のCSS*/
@@ -240,4 +294,12 @@ header {
 
 #footer {
     background-color: #ffffff;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 0px;
+}
+
+#access {
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
