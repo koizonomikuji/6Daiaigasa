@@ -153,13 +153,17 @@ body {
 #information h1 {
     text-align: center;
     padding: 10px 0px 10px 0px;
-    margin-bottom: 0px;
+    margin: 0px;
+}
+
+#information hr {
+    border: none;
+    height: 2px;
+    background-color: #6688bb55;
+    margin: 0px;
 }
 
 .info {
-    border-top: #6688bb77 solid 2px;
-    border-bottom: #6688bb77 solid 2px;
-    margin-bottom: 5px;
     padding: 25px 10px 25px 10px;
     display: flex;
 }
@@ -169,6 +173,11 @@ body {
     margin-right: 10px;
 }
 
+.white-line {
+    border: none;
+    height: 8px;
+    background-color: #ffffff;
+}
 
 /*以下、ポップアップ用のCSS*/
 .open {
