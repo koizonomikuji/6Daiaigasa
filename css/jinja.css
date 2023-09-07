@@ -5,6 +5,10 @@ header {
     position: relative;
 }
 
+body {
+    color: #68b
+}
+
 .logo {
     font-size: 24px;
 }
@@ -137,6 +141,26 @@ header {
     left: 0;
     /*メニューを画面内へ*/
 }
+
+/*information*/
+#information {
+    border-top: #ddd solid 5px;
+    border-bottom: #ddd solid 5px;
+}
+
+.info {
+    border-top: #68b7 solid 2px;
+    border-bottom: #68b7 solid 2px;
+    margin-bottom: 5px;
+    padding: 25px 10px 25px 10px;
+    display: flex;
+}
+
+.info img {
+    width: 30vw;
+    margin-right: 10px;
+}
+
 
 /*以下、ポップアップ用のCSS*/
 .open {
