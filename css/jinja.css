@@ -266,8 +266,14 @@ header {
 
 /*おみくじ*/
 #koizono-mikuji img {
+    position: relative;
     width: 80%;
     object-fit: cover;
+    z-index: 100;
+}
+
+#koizono-mikuji input {
+    width: 100vw;
 }
 
 /*以下、ポップアップ用のCSS*/
