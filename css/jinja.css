@@ -13,6 +13,7 @@ header {
     align-items: center;
     position: relative;
     background-color: #ffffff;
+    padding-top: 50px;
 }
 
 .logo {
@@ -31,8 +32,8 @@ header {
 
 .menu-btn {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 5px;
     display: flex;
     height: 60px;
     width: 60px;
