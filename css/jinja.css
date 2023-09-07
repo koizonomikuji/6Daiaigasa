@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
 
 body {
-    color: #6688bb;
+    color: #6a86a2;
     background-image: url(/img/background.png);
     background-repeat: repeat;
     margin: 0px;
@@ -198,7 +198,7 @@ header {
 #information hr {
     border: none;
     height: 2px;
-    background-color: #6688bb55;
+    background-color: #6a86a2;
     margin: 0px;
 }
 
@@ -223,11 +223,14 @@ header {
 #arasuji {
     background-color: #fff6ec;
     padding: 5px 20px 20px 20px;
-    border-top: #6688bb solid 2px;
-    border-bottom: #6688bb solid 2px;
+    border-top: #7ca1b2 solid 2px;
+    border-bottom: #7ca1b2 solid 2px;
     margin-top: 50px;
-    background-image: url(/img/arasuji_background.png);
+    background-image:
+        radial-gradient(ellipse closest-side, #ffffff00 50%, #ffa20012),
+        url(/img/arasuji_background.png);
     background-size: contain;
+    color: #7ca1b2;
 }
 
 #arasuji h1 {
@@ -239,41 +242,52 @@ header {
 }
 
 .pink {
-    color: #ff99aa;
+    color: #fe7ca7;
 }
 
 .blue {
-    color: #218ed6;
+    color: #4d9dc4;
 }
 
 .orange {
-    color: #ffaa00;
+    color: #fe994e;
 }
 
 .yellow {
-    color: #ffcc00;
+    color: #fec243;
 }
 
 .lightblue {
-    color: #00ccff;
+    color: #00c8de;
 }
 
 #kasa {
-    width: 100vw;
-    background-image: url(/img/kasa_background.png);
+    width: 100%;
+    background: radial-gradient(#3bc2de, #ffffff00 50%);
     background-size: contain;
 }
 
 /*おみくじ*/
 #koizono-mikuji img {
-    position: relative;
-    width: 80%;
+    position: absolute;
+    margin-top: 3%;
+    left: 15%;
+    width: 70%;
     object-fit: cover;
-    z-index: 100;
+    z-index: 10;
+    pointer-events: none;
 }
 
 #koizono-mikuji input {
     width: 100vw;
+}
+
+.blue-line {
+    border: none;
+    height: 6px;
+    background-color: #99ced6;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 /*以下、ポップアップ用のCSS*/
@@ -322,10 +336,12 @@ header {
 }
 
 #footer {
+    margin-top: 70px;
     background-color: #ffffff;
     text-align: center;
     font-size: small;
     margin-bottom: 0px;
+    padding-top: 20px;
 }
 
 #access {
