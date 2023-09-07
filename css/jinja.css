@@ -1,3 +1,9 @@
+body {
+    color: #6688bb;
+    background-color: #eef7ff;
+    margin: 0px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -6,14 +12,18 @@ header {
     background-color: #ffffff;
 }
 
-body {
-    color: #6688bb;
-    background-color: #eef7ff;
+.logo {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0px;
 }
 
-.logo {
-    font-size: 24px;
+.logo p {
+    margin: 0px;
+    font-size: small;
+    text-align: center;
 }
 
 .menu-btn {
