@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>6D あいあい傘</title>
+    <link rel="stylesheet" href="css/jinja.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="html.js"></script>
+    <script src="mikuji.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="6D あいあい傘">
+            <img src="img/logo_text.png" alt="恋園神社">
+            <p>Koizono Jinja</p>
+        </div>
+        <div class="nav">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span><span></span><span></span></label>
+            <nav class="menu-content">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#information" onclick="closeMenu()">案内</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#arasuji" onclick="closeMenu()">あらすじ</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#koizono-mikuji" onclick="closeMenu()">おみくじ</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#footer" onclick="closeMenu()">アクセス</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="hrad_img">
+        <img src="img/ajisai_chochin.png" alt="紫陽花と提灯">
+        <img src="img/ajisai_torii.png" alt="紫陽花と鳥居">
+    </div>
+    <div id="mikuji_banner">
+        <img src="img/mikuji_banner.png" alt="おみくじ">
+    </div>
+    <p>↓ おみくじは下にスクロール ↓</p>
+    <div id="information">
+        <h1>案内</h1>
+        <div class="info">
+            <img src="img/temizuya.png" alt="手水舎">
+            <div class="texts">
+                <p>2023/9/16</p>
+                <h2>恋園神社</h2>
+                <p>
+                    町のみんなから親しまれる小さな神社<br>
+                    6D「あいあい傘」の舞台
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <img src="img/engawa.png" alt="縁側">
+            <div class="texts">
+                <p>2023/9/16</p>
+                <h2>恋園庵</h2>
+                <p>
+                    食事・甘味処<br>
+                    名物　おしるこ 恋園せいろ
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <img src="img/ajisai_kaidan.png" alt="紫陽花と階段">
+            <div class="texts">
+                <p>2023/9月中旬</p>
+                <h2>恋園祭り</h2>
+                <p>
+                    年に一度のお祭り、今年も開催<br>
+                    屋台と人の活気で賑わいます
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="arasuji">
+        <h1>あらすじ</h1>
+        <p>
+            恋園神社のある小さな田舎町。<br>
+            この町には、25年前に失踪した父と新しい家族がいた。
+        </p>
+        <p>
+            親子の愛、夫婦の愛、カップルの愛。それぞれ違った形での「愛」を描く、たった5日間の物語。
+        </p>
+        <p>
+            あなたもきっと涙する、この物語の結末を6年D組が愛を込めてお送りします。
+        </p>
+    </div>
+    <div id="koizono-mikuji">
+        <img src="img/mikuji_text.png" alt="恋園神社おみくじ">
+        <input type="image" src="img/mikuji_button.png" alt="おみくじを引く" onclick="mikuji()">
+        <input type="checkbox" id="pop-up">
+        <div class="overlay">
+            <div class="window">
+                <label class="close" for="pop-up">閉じる</label>
+                <p id="mikuji-luck"></p>
+                <p id="mikuji-description"></p>
+                <p id="mikuji-text">ラッキーアイテム</p>
+                <p id="mikuji-item"></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="logo">
+            <img src="img/logo.png" alt="6D あいあい傘">
+            <img src="img/logo_text.png" alt="恋園神社">
+            <p>Koizono Jinja</p>
+        </div>
+        <p>
+            2023創作展創作部門　6年D組「あいあい傘」
+        </p>
+        <p>
+            2階　鳥居が目印
+        </p>
+        <p>
+            東京都立小石川中等教育学校<br>
+            住所　東京都文京区本駒込2-29-29
+        </p>
+        <p>
+            路線案内<br>
+            都営三田線　「千石」駅　徒歩3分<br>
+            山手線/都営三田線　「巣鴨」駅　徒歩10分<br>
+            山手線/東京メトロ南北線　「駒込」駅　徒歩13分
+        </p>
+    </div>
+</body>
+
+</html>

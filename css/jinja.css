@@ -1,0 +1,184 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+.menu-btn span {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #000;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.menu-btn span:nth-of-type(1) {
+    top: 10px;
+}
+
+.menu-btn span:nth-of-type(2) {
+    top: 19px;
+}
+
+.menu-btn span:nth-of-type(3) {
+    top: 28px;
+}
+
+.menu-btn span:nth-of-type(3)::after {
+    content: "Menu";
+    /*3つ目の要素のafterにMenu表示を指定*/
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    color: #000;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+#menu-btn-check:checked~.menu-btn span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+#menu-btn-check:checked~.menu-btn span:nth-of-type(2) {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-btn-check:checked~.menu-btn span:nth-of-type(3) {
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+#menu-btn-check:checked~.menu-btn span:nth-of-type(3)::after {
+    content: "Close";
+    /*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+    top: 5px;
+    left: 4px;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #ddd;
+    left: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    transition: all 0.5s ease-in-out;
+    /*アニメーション設定*/
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #222;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+    left: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+#menu-btn-check:checked~.menu-content {
+    left: 0;
+    /*メニューを画面内へ*/
+}
+
+/*以下、ポップアップ用のCSS*/
+.open {
+    cursor: pointer;
+}
+
+#pop-up {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+#pop-up:checked+.overlay {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    max-width: 360px;
+    padding: 20px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 4px;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}

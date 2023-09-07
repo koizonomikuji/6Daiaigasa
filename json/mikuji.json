@@ -1,0 +1,32 @@
+[
+    {
+        "luck": "大大吉",
+        "weight": 10,
+        "description": "素敵な出会いがあるかも",
+        "item": "カメラ"
+    },
+    {
+        "luck": "大吉",
+        "weight": 30,
+        "description": "おしるこを食べるといいことがあるかも",
+        "item": "傘"
+    },
+    {
+        "luck": "吉",
+        "weight": 50,
+        "description": "小石川の池上彰と呼ばれるかも",
+        "item": "扇子"
+    },
+    {
+        "luck": "中吉",
+        "weight": 50,
+        "description": "家族に感謝を伝えてみよう",
+        "item": "縁日の焼きそば"
+    },
+    {
+        "luck": "小吉",
+        "weight": 50,
+        "description": "居酒屋での居眠りに注意！",
+        "item": "サメのぬいぐるみ"
+    }
+]
