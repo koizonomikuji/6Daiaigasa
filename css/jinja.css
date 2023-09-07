@@ -3,10 +3,12 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: #ffffff;
 }
 
 body {
-    color: #68b
+    color: #6688bb;
+    background-color: #eef7ff;
 }
 
 .logo {
@@ -31,7 +33,7 @@ body {
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background-color: #000;
+    background-color: #000000;
     transition: 0.5s;
     position: absolute;
 }
@@ -54,7 +56,7 @@ body {
     position: absolute;
     top: 5px;
     left: -2px;
-    color: #000;
+    color: #000000;
     font-size: 0.6rem;
     text-transform: uppercase;
 }
@@ -67,7 +69,7 @@ body {
 }
 
 #menu-btn-check:checked~.menu-btn span:nth-of-type(2) {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #ffffff00;
 }
 
 #menu-btn-check:checked~.menu-btn span:nth-of-type(3) {
@@ -96,7 +98,7 @@ body {
     top: 0;
     left: 0;
     z-index: 80;
-    background-color: #ddd;
+    background-color: #dddddd;
     left: 100%;
     /*leftの値を変更してメニューを画面外へ*/
     transition: all 0.5s ease-in-out;
@@ -144,13 +146,12 @@ body {
 
 /*information*/
 #information {
-    border-top: #ddd solid 5px;
-    border-bottom: #ddd solid 5px;
+    background-color: #ffffff;
 }
 
 .info {
-    border-top: #68b7 solid 2px;
-    border-bottom: #68b7 solid 2px;
+    border-top: #6688bb77 solid 2px;
+    border-bottom: #6688bb77 solid 2px;
     margin-bottom: 5px;
     padding: 25px 10px 25px 10px;
     display: flex;
@@ -183,7 +184,7 @@ body {
     top: 0;
     left: 0;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.6);
+    background: #00000099;
 }
 
 .window {
@@ -194,7 +195,7 @@ body {
     max-width: 360px;
     padding: 20px;
     height: 300px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 4px;
     align-items: center;
     transform: translate(-50%, -50%);
@@ -205,4 +206,8 @@ body {
     top: 4px;
     right: 4px;
     cursor: pointer;
+}
+
+#footer {
+    background-color: #ffffff;
 }
