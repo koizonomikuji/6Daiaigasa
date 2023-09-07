@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
 body {
     color: #6688bb;
     background-color: #eef7ff;
     margin: 0px;
+    font-family: 'Shippori Mincho B1', serif, sans-serif;
 }
 
 header {
