@@ -210,6 +210,7 @@ header {
 .info img {
     width: 30vw;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 .white-line {
@@ -225,6 +226,8 @@ header {
     border-top: #6688bb solid 2px;
     border-bottom: #6688bb solid 2px;
     margin-top: 50px;
+    background-image: url(/img/arasuji_background.png);
+    background-size: contain;
 }
 
 #arasuji h1 {
@@ -253,6 +256,18 @@ header {
 
 .lightblue {
     color: #00ccff;
+}
+
+#kasa {
+    width: 100vw;
+    background-image: url(/img/kasa_background.png);
+    background-size: contain;
+}
+
+/*おみくじ*/
+#koizono-mikuji img {
+    width: 80%;
+    object-fit: cover;
 }
 
 /*以下、ポップアップ用のCSS*/
