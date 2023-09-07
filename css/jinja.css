@@ -294,4 +294,12 @@ header {
 
 #footer {
     background-color: #ffffff;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 0px;
+}
+
+#access {
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
