@@ -2,7 +2,8 @@
 
 body {
     color: #6688bb;
-    background-color: #eef7ff;
+    background-image: url(/img/background.png);
+    background-repeat: repeat;
     margin: 0px;
     font-family: 'Shippori Mincho B1', serif, sans-serif;
 }
@@ -167,7 +168,10 @@ header {
 }
 
 #mikuji-banner {
-    padding: 20px 50px 50px 50px;
+    padding: 2% 5% 5% 5%;
+    background-image: url(/img/mikuji_banner_background.png);
+    background-size: cover;
+    margin-top: 30px;
 }
 
 #mikuji-banner img {
