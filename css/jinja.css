@@ -150,6 +150,12 @@ body {
     background-color: #ffffff;
 }
 
+#information h1 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 0px;
+}
+
 .info {
     border-top: #6688bb77 solid 2px;
     border-bottom: #6688bb77 solid 2px;
