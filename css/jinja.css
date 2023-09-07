@@ -159,6 +159,21 @@ header {
     /*メニューを画面内へ*/
 }
 
+/*上部の画像*/
+#head-img {
+    display: flex;
+    height: 60vw;
+}
+
+#mikuji-banner {
+    width: 100vw;
+    height: 50vw;
+}
+
+#mikuji-banner img {
+    width: 100%;
+}
+
 /*information*/
 #information {
     background-color: #ffffff;
