@@ -159,12 +159,15 @@ header {
 /*上部の画像*/
 #head-img {
     display: flex;
-    height: 60vw;
+}
+
+#head-img img {
+    width: 50%;
+    object-fit: cover;
 }
 
 #mikuji-banner {
-    width: 100vw;
-    height: 50vw;
+    padding: 20px 50px 50px 50px;
 }
 
 #mikuji-banner img {
@@ -222,6 +225,10 @@ header {
 
 #arasuji h1 {
     text-align: center;
+}
+
+#arasuji strong {
+    font-weight: lighter;
 }
 
 .pink {
