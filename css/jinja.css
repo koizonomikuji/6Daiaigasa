@@ -26,7 +26,7 @@ header {
     align-items: center;
     position: relative;
     background-color: #ffffff;
-    padding-top: 10vw;
+    padding-top: 3vw;
     padding-bottom: 3%;
 }
 
@@ -43,7 +43,7 @@ header {
 
 .menu-btn {
     position: fixed;
-    top: 10vw;
+    top: 3vw;
     right: 1vw;
     display: flex;
     height: 10vw;
@@ -398,7 +398,7 @@ header {
     margin-top: 10vw;
     background-color: #ffffff;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-bottom: 0px;
     padding-top: 5vw;
 }
