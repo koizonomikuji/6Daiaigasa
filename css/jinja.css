@@ -204,7 +204,7 @@ header {
 
 #information h1 {
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 2% 0px;
     margin: 0px;
 }
 
@@ -216,19 +216,23 @@ header {
 }
 
 .info {
-    padding: 25px 10px 25px 10px;
+    padding: 5% 5%;
     display: flex;
 }
 
 .info img {
     width: 30vw;
-    margin-right: 10px;
+    margin-right: 8%;
     object-fit: cover;
+}
+
+#kaidan {
+    object-position: 100% 0%;
 }
 
 .white-line {
     border: none;
-    height: 8px;
+    height: 0.5rem;
     background-color: #ffffff;
 }
 
@@ -247,6 +251,7 @@ header {
 }
 
 #arasuji-img {
+    margin-top: 10vw;
     width: 100vw;
 }
 
@@ -301,10 +306,10 @@ header {
 
 .blue-line {
     border: none;
-    height: 6px;
+    height: 0.4rem;
     background-color: #99ced6;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 /*以下、ポップアップ用のCSS*/
@@ -353,15 +358,15 @@ header {
 }
 
 #footer {
-    margin-top: 70px;
+    margin-top: 10vw;
     background-color: #ffffff;
     text-align: center;
-    font-size: small;
+    font-size: 0.6rem;
     margin-bottom: 0px;
-    padding-top: 20px;
+    padding-top: 5vw;
 }
 
 #access {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 10vw;
+    padding-bottom: 6vw;
 }
