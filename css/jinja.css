@@ -27,6 +27,7 @@ header {
     position: relative;
     background-color: #ffffff;
     padding-top: 10vw;
+    padding-bottom: 3%;
 }
 
 .logo {
@@ -98,7 +99,7 @@ header {
 }
 
 #menu-btn-check:checked~.menu-btn span:nth-of-type(3) {
-    top: 5.8vw;
+    top: 5.5vw;
     left: 4.3vw;
     transform: translateY(-1.2vw) rotate(45deg);
     width: 30%;
@@ -131,36 +132,36 @@ header {
 }
 
 .menu-content ul {
-    padding: 70px 10px 0;
+    padding: 10vw 5vw 0;
 }
 
 .menu-content ul li {
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 0.1rem #ffffff;
     list-style: none;
 }
 
 .menu-content ul li a {
     display: block;
     width: 100%;
-    font-size: 15px;
+    font-size: 1rem;
     box-sizing: border-box;
     color: #222;
     text-decoration: none;
-    padding: 9px 15px 10px 0;
+    padding: 10% 2% 2% 0;
     position: relative;
 }
 
 .menu-content ul li a::before {
     content: "";
-    width: 7px;
-    height: 7px;
-    border-top: solid 2px #ffffff;
-    border-right: solid 2px #ffffff;
+    width: 1rem;
+    height: 1rem;
+    border-top: solid 0.1rem #ffffff;
+    border-right: solid 0.1rem #ffffff;
     transform: rotate(45deg);
     position: absolute;
-    right: 11px;
-    top: 16px;
-    left: 100%;
+    right: 5%;
+    top: 60%;
+    left: 95%;
     transition: all 0.5s ease-in-out;
 }
 
