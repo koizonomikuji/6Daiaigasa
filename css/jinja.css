@@ -14,13 +14,13 @@ header {
     align-items: center;
     position: relative;
     background-color: #ffffff;
-    padding-top: 50px;
+    padding-top: 10vw;
 }
 
 .logo {
     align-items: center;
     margin: 0px;
-    height: 100px;
+    height: 30vw;
 }
 
 .logo img {
@@ -30,11 +30,11 @@ header {
 
 .menu-btn {
     position: fixed;
-    top: 30px;
-    right: 5px;
+    top: 10vw;
+    right: 1vw;
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 10vw;
+    width: 10vw;
     justify-content: center;
     align-items: center;
     z-index: 90;
@@ -43,41 +43,41 @@ header {
 .menu-btn span {
     content: '';
     display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
+    height: 0.5vw;
+    width: 6vw;
+    border-radius: 0.5vw;
     background-color: #000000;
     transition: 0.5s;
     position: absolute;
 }
 
 .menu-btn span:nth-of-type(1) {
-    top: 10px;
+    top: 2vw;
 }
 
 .menu-btn span:nth-of-type(2) {
-    top: 19px;
+    top: 4vw;
 }
 
 .menu-btn span:nth-of-type(3) {
-    top: 28px;
+    top: 6vw;
 }
 
 .menu-btn span:nth-of-type(3)::after {
     content: "Menu";
     /*3つ目の要素のafterにMenu表示を指定*/
     position: absolute;
-    top: 5px;
-    left: -2px;
+    top: 1vw;
+    left: -0.4vw;
     color: #000000;
     font-size: 0.6rem;
     text-transform: uppercase;
 }
 
 #menu-btn-check:checked~.menu-btn span:nth-of-type(1) {
-    top: 14px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
+    top: 3.05vw;
+    left: 4.3vw;
+    transform: translateY(1.2vw) rotate(-45deg);
     width: 30%;
 }
 
@@ -86,9 +86,9 @@ header {
 }
 
 #menu-btn-check:checked~.menu-btn span:nth-of-type(3) {
-    top: 26px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
+    top: 5.8vw;
+    left: 4.3vw;
+    transform: translateY(-1.2vw) rotate(45deg);
     width: 30%;
 }
 
@@ -96,8 +96,8 @@ header {
     content: "Close";
     /*3つ目の要素のafterにClose表示を指定*/
     transform: translateY(0) rotate(-45deg);
-    top: 5px;
-    left: 4px;
+    top: 1vw;
+    left: 0.8vw;
 }
 
 #menu-btn-check {
@@ -263,7 +263,7 @@ header {
 
 #kasa {
     width: 100%;
-    background: radial-gradient(#3bc2de, #ffffff00 50%);
+    background: radial-gradient(#7391a7, #ffffff00 50%);
     background-size: contain;
 }
 
