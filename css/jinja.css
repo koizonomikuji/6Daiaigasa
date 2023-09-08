@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
 
+html {
+    font-size: calc(16/475*100vw);
+}
+
 body {
     color: #6a86a2;
     background-image: url(/img/background.png);
