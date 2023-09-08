@@ -338,16 +338,53 @@ header {
 
 .window {
     position: fixed;
+    background-image: url(../img/mikuji_result.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 80vw;
+    height: 80vw;
     top: 50%;
     left: 50%;
-    width: 90vw;
-    max-width: 360px;
-    padding: 20px;
-    height: 300px;
     background-color: #ffffff;
-    border-radius: 4px;
+    border-radius: 1vw;
     align-items: center;
     transform: translate(-50%, -50%);
+    color: #000000;
+}
+
+.window label {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    padding: 0.1rem;
+    border: #000000 solid 0.1rem;
+}
+
+#mikuji-luck {
+    text-align: center;
+    font-size: 9vw;
+    margin: 2vw 22vw 2vw 27vw;
+}
+
+#mikuji-description {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0;
+    margin-left: 15vw;
+    margin-right: 17vw;
+}
+
+#mikuji-item {
+    text-align: center;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 48vw;
+    left: 15vw;
+    right: 43vw;
+    transform: rotate(3deg);
 }
 
 .close {
