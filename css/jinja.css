@@ -6,7 +6,7 @@ html {
 
 body {
     color: #6a86a2;
-    background-image: url(/img/background.png);
+    background-image: url(img/background.png);
     background-repeat: repeat;
     margin: 0px;
     font-family: 'Shippori Mincho B1', serif, sans-serif;
@@ -173,7 +173,7 @@ header {
 
 #mikuji-banner {
     padding: 2% 5% 5% 5%;
-    background-image: url(/img/mikuji_banner_background.png);
+    background-image: url(img/mikuji_banner_background.png);
     background-size: cover;
     margin-top: 30px;
 }
@@ -232,7 +232,7 @@ header {
     margin-top: 50px;
     background-image:
         radial-gradient(ellipse closest-side, #ffffff00 50%, #ffa20012),
-        url(/img/arasuji_background.png);
+        url(img/arasuji_background.png);
     background-size: contain;
     color: #7ca1b2;
 }
