@@ -1,7 +1,9 @@
+let result_dict = {};
+
 // JSONファイルからデータを取得し、おみくじを引く
 function mikuji() {
-    const checkbox = document.getElementById("pop-up");
-    checkbox.checked = true;
+    //const checkbox = document.getElementById("pop-up");
+    //checkbox.checked = true;
     // JSONファイルを読み込む
     $.getJSON("json/mikuji.json", function (data) {
         //console.log(data);
@@ -11,16 +13,42 @@ function mikuji() {
         //console.log(random);
 
         // おみくじの結果を表示
-        let result = data[random];
+        result_dict = data;
+        //console.log(result_dict[data]);
+
+        // 結果を query で保持して画面を遷移
+        let query = "?";
+        query += "luck=" + encodeURIComponent(random);
+        location.href = "result.html" + query;
+        //console.log(query);
+
+        // test_random_weight(data);
+    });
+}
+
+function set_result() {
+    // result までスクロール
+    var result = document.getElementById("result");
+    var rect = result.getBoundingClientRect();
+    var position = rect.top + window.pageYOffset;
+    document.documentElement.scrollTop = position;
+
+    // query から結果を取得して表示
+    let query = location.search;
+    let id = query.split("=")[1];
+    console.log(id);
+    $.getJSON("json/mikuji.json", function (data) {
+        console.log(data);
+        const result = data[id];
         console.log(result);
 
         const luck = document.getElementById("mikuji-luck");
+        if (luck == null) { return; }
         luck.textContent = result.luck;
         const description = document.getElementById("mikuji-description");
         description.textContent = result.description;
         const item = document.getElementById("mikuji-item");
         item.textContent = result.item;
-        // test_random_weight(data);
     });
 }
 

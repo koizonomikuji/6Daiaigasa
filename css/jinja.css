@@ -290,6 +290,7 @@ header {
 }
 
 /*おみくじ*/
+/*
 #koizono-mikuji img {
     position: absolute;
     margin-top: 3%;
@@ -299,10 +300,27 @@ header {
     z-index: 10;
     pointer-events: none;
 }
+*/
 
+#mikuji-text {
+    position: absolute;
+    margin-top: 3%;
+    left: 15%;
+    width: 70%;
+    object-fit: cover;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#mikuji-button {
+    width: 100%;
+}
+
+/*
 #koizono-mikuji input {
     width: 100vw;
 }
+*/
 
 .blue-line {
     border: none;
@@ -336,6 +354,25 @@ header {
     background: #00000099;
 }
 
+#result img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#mikuji-result {
+    position: absolute;
+    top: 89.5vw;
+    background-image: url(../img/mikuji_result.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vw;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    align-items: center;
+    color: #000000;
+    z-index: -10;
+}
+
 .window {
     position: fixed;
     background-image: url(../img/mikuji_result.png);
@@ -365,25 +402,25 @@ header {
 
 #mikuji-luck {
     text-align: center;
-    font-size: 9vw;
-    margin: 2vw 22vw 2vw 27vw;
+    font-size: 11vw;
+    margin: 3.5vw 28vw 1vw 33vw;
 }
 
 #mikuji-description {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin: 0;
-    margin-left: 15vw;
-    margin-right: 17vw;
+    margin-left: 18vw;
+    margin-right: 20vw;
 }
 
 #mikuji-item {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 3vw;
     position: absolute;
-    top: 48vw;
-    left: 15vw;
-    right: 43vw;
+    top: 60vw;
+    left: 18vw;
+    right: 55vw;
     transform: rotate(3deg);
 }
 
